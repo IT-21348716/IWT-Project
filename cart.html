@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+		<meta charset="utf-8" />
+		<title>BUZELL IT</title>
+		<link rel="stylesheet" href="Styles/StyleH.css" />
+		<link rel="stylesheet" href="Styles/cart.css" />
+		<link rel="Buy" href="buypage.html" />
+	</head>
+
+	<body>
+		<div class="Navbar">
+
+			<div class="logo">
+				<img src="Images/logo.png" width="200px" height="110px" />
+
+			</div>
+
+			<nav>
+				<ul class="nav1">
+					<li><a href="Home.html">Home</a></li>
+					<li><a href="buypage.html">Buy</a></li>
+					<li><a href="">Sell</a></li>
+					<li><a href="">Contact us</a></li>
+					<li><a href="">About us</a></li>
+					<li><input type="text" class="sbar" placeholder="Search..">
+
+				</ul>
+			</nav>
+
+			<div class="crt">
+				<a href="#"><img src="images/cart.png" id="crt" width="25px" height="25px"></a>
+			</div>
+			<div class="action">
+				<div class="prof" onclick="menu()" ;>
+					<a href="#"><img src="images/user.png" id="use" width="25px" height="25px"></a>
+				</div>
+				<div class="menu">
+					<h3>safna</h3>
+					<ul>
+						<li><img src="images/profile.png"><a href="#">Log In</a></li>
+						<li><img src="images/add.png"><a href="#">Register</a></li>
+						<li><img src="images/question.png"><a href="#">Help</a></li>
+						<li><img src="images/settings.png"><a href="#">Settings</a></li>
+					</ul>
+				</div>
+			</div>
+			<script>
+				function menu () {
+					const toggle = document.querySelector( '.menu' );
+					toggle.classList.toggle( 'active' );
+				}
+			</script>
+		</div>
+
+		<!--Cart item details-->
+		<center>
+			<h1>Shopping Cart</h1>
+		</center>
+		<div class="cart-container">
+			<div class="flex">
+				<div class="items" id="item-container">
+
+
+
+
+				</div>
+				<div class="items">
+					<div class="cart-total">
+
+						<p>
+							<span> Subtotal</span>
+							<span> Rs <span id="sub-total"></span> </span>
+						</p>
+						<p>
+							<span>Your Save</span>
+							<span> Rs <span id="save-amount"></span> </span>
+
+						</p>
+						<p>
+							<span>Number of Items</span>
+							<span> <span id="no-items"></span> </span>
+						</p>
+
+
+						<p>
+							<span>Cash on delivery </span>
+							<span> + Rs 350 </span>
+						</p>
+						<p>
+							<span>Credit/Debit card</span>
+							<span> + Rs 250</span>
+						</p>
+						<p>
+							<span>Paypal and Visa payment</span>
+							<span> + Rs 250 </span>
+						</p>
+
+
+
+						<h2> Select Your Delivery Method </h2>
+
+						<label class="container"> CASH ON DELIVERY
+							<input type="radio" name="payment" checked value="350" onchange="calTotal()">
+							<span class="check"></span>
+						</label>
+						<label class="container"> CREDIT/DEBIT CARD
+							<input type="radio" name="payment" value="250" onchange="calTotal()">
+							<span class="check"></span>
+						</label>
+						<label class="container"> PAYPAL
+							<input type="radio" name="payment" value="250" onchange="calTotal()">
+							<span class="check"></span>
+						</label>
+						<label class="container"> VISA PAYMENT
+							<input type="radio" name="payment" value="250" onchange="calTotal()">
+							<span class="check"></span>
+						</label>
+
+						<div class="cart total">
+							<p>
+								<span> TOTAL PRICE </span>
+								<span> RS <span id="total"></span> </span>
+							</p>
+
+							<a href="checkout.html"> Proceed to Checkout</a>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+		</div>
+
+
+		<!--Code the rest of the Body -->
+
+		<footer class="footer">
+			<div class="container">
+				<div class="row">
+					<div class="footer-col">
+						<h4>Company</h4>
+
+						<ul>
+							<li><a href="aboutus.html">about us</a></li>
+							<li><a href="#">Our services</a></li>
+							<li><a href="#">Privacy policy</a></li>
+							<li><a href="checkout.php">delivery</a></li>
+						</ul>
+					</div>
+
+					<div class="footer-col">
+						<h4>Our Designers</h4>
+
+						<ul>
+							<li><a href="faq.php">Web Designers</a></li>
+							<li><a href="contactus.php">Graphic Designers</a></li>
+							<li><a href="return.php">UI/UX Designers</a></li>
+							<li><a href="#">Database Managers</a></li>
+							<li><a href="payment.html">Cyber Officers</a></li>
+						</ul>
+					</div>
+
+					<div class="footer-col">
+						<h4>Categories</h4>
+
+						<ul>
+							<li><a href="products.html">Electronics</a></li>
+							<li><a href="products.html">Vehicles</a></li>
+							<li><a href="products.html">Houses</a></li>
+							<li><a href="products.html">Clothes</a></li>
+							<li><a href="products.html">Animals</a></li>
+							<li><a href="newarrivals.html">Fashion and Beauty</a></li>
+						</ul>
+					</div>
+					<div class="footer-col">
+						<h4>Buy Services Online</h4>
+
+						<ul>
+							<li><a href="products.html">Graphic Designing</a></li>
+							<li><a href="products.html">Thumbnail Designing</a></li>
+							<li><a href="products.html">Data Entry</a></li>
+							<li><a href="products.html">UI/UX Designing</a></li>
+							<li><a href="products.html">Web App Developments</a></li>
+							<li><a href="newarrivals.html">Video Editing</a></li>
+						</ul>
+					</div>
+
+					<div class="social-links">
+						<a href="#"><img src="images/fb.png" id="sm" width="50px" height="50px"></a>
+						<a href="#"><img src="images/twit.png" id="sm" width="50px" height="50px"></a>
+						<a href="#"><img src="images/insta.png" id="sm" width="50px" height="50px"></a>
+						<a href="#"><img src="images/link.png" id="sm" width="50px" height="50px"></a>
+					</div>
+
+					<div class="notice">
+						<br>
+						Copyright Protected &copy;
+						<b>2022 BUZELLIT.lk (Pvt.).Ltd</b>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+	</body>
+
+</html>
+<script>
+	// default values
+	let subTotal = 0;
+	let total = 0;
+	let saveAmount = 0;
+	let noOfItems = 0;
+
+
+	// list of items in the cart,  change this if you want to values in the items
+	let items = [
+		{
+			id: 1,
+			name: 'Dark Gray Midi Skirt',
+			qty: 1,
+			price: 2500,
+			discount: 10,
+			img: 'Images/skirt.jpg'
+		},
+		{
+			id: 2,
+			name: 'Mens Black Short Round Neck T-shirt',
+			qty: 1,
+			price: 1600,
+			discount: 10,
+			img: 'Images/T-shirt.jpg'
+		},
+		{
+			id: 3,
+			name: 'Faux-wrap Floral Print Maxi Casual',
+			qty: 1,
+			price: 5900,
+			discount: 30,
+			img: 'Images/frock.jpg'
+		}
+	];
+	// calling these functions when the page is loaded
+	setItems();
+	calTotal();
+
+	// this function will loop through the items array and dynamically create the html code relted to each item card.
+	function setItems () {
+
+		const container = document.getElementById( 'item-container' );
+		container.innerHTML = '';
+		items.forEach( item => {
+			const itemCard = `
+					<div class="container">
+									<div class="cart">
+										<div class="products">
+											<div class="product">
+												<img src="${ item.img }" width="50" height="100">
+												<div class="product-info">
+													<h3 class="product-name"> ${ item.name }</h3>
+													<p class="product-quantity">Qnt:<input value="${ item.qty }" oninput="onQtyChange(${ item.id })" id="item-qty-${ item.id }"></p>
+													<h2 class="product-price"> Rs ${ item.price }</h2>
+													<h2 class="product-offer"> ${ item.discount }%</h2>
+													<p class="product-remove" onclick="removeItem(${ item.id })">
+														<i class="fa fa-trash" aria-hidden="true"></i>
+														<span class="Remove">Remove</span>
+													</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+			`;
+
+			container.innerHTML += itemCard;
+		} );
+	}
+
+	function removeItem ( id ) {
+		let item = items.find( i => i.id == id );
+		items.splice( items.indexOf( item ), 1 );
+		setItems();
+		calTotal();
+	}
+
+	function onQtyChange ( id ) {
+		var qty = +document.getElementById( `item-qty-${ id }` ).value;
+		let item = items.find( i => i.id == id );
+		item.qty = qty;
+		calTotal();
+
+	}
+
+	// this function will calculate the totals, subtotals and other calculations
+	function calTotal () {
+		let paymentFee = +document.querySelector( 'input[name="payment"]:checked' ).value;
+		subTotal = items.map( i => i.price * i.qty ).reduce( ( a, b ) => a + b );
+		saveAmount = items.map( i => ( i.price / 100 ) * i.discount * i.qty ).reduce( ( a, b ) => a + b );
+		total = subTotal - saveAmount + paymentFee;
+		noOfItems = items.map( i => i.qty ).reduce( ( a, b ) => a + b );
+
+		document.getElementById( 'sub-total' ).innerHTML = subTotal;
+		document.getElementById( 'save-amount' ).innerHTML = saveAmount;
+		document.getElementById( 'no-items' ).innerHTML = noOfItems;
+		document.getElementById( 'total' ).innerHTML = total;
+
+	}
+
+</script>

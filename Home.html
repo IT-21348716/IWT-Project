@@ -1,0 +1,134 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>BUZELL IT</title>
+    <link rel="stylesheet" href="Styles/StyleH.css" />
+</head>
+<body>
+    <div class="Navbar">
+
+        <div class="logo">
+            <img src="Images/logo.png" width="200px" height="110px" />
+        </div>
+
+        <nav>
+            <ul class="nav1">
+                <li><a href="">Home</a></li>
+                <li><a href="">Buy</a></li>
+                <li><a href="">Sell</a></li>
+                <li><a href="">Contact us</a></li>
+                <li><a href="">About us</a></li>
+				<li ><input type="text" class="sbar" placeholder="Search..">
+
+            </ul>
+        </nav>
+
+        <div class="crt">
+            <a href="cart.html"><img src="images/cart.png" id="crt" width="25px" height="25px"></a>
+        </div>
+        <div class="action">
+            <div class="prof" onclick="menu()" ;>
+                <a href="#"><img src="images/user.png" id="use" width="25px" height="25px"></a>
+            </div>
+            <div class="menu">
+                <h3>Salila Jayasekara</h3>
+                <ul>
+                    <li><img src="images/profile.png"><a href="#">Log In</a></li>
+                    <li><img src="images/add.png"><a href="#">Register</a></li>
+                    <li><img src="images/question.png"><a href="#">Help</a></li>
+                    <li><img src="images/settings.png"><a href="#">Settings</a></li>
+                </ul>
+            </div>
+        </div>
+        <script>
+            function menu() {
+                const toggle = document.querySelector('.menu');
+                toggle.classList.toggle('active');
+            }
+        </script>
+    </div>
+
+    <div class="brow">
+        <div class="col-2">
+            <h1>Wanna Buy or Sell?<br>We got you...</h1>
+            <a href="products.html" class="btn">Explore &#8594;</a>
+        </div>
+        <div class="col-2">
+            <img src="images/row0.jpg" width="751px" height="620px">
+        </div>
+        <h1 id="trend">Trending Items</h1>
+    </div>
+	<!-- 
+		Code the rest of the Body -->
+		
+	<footer class= "footer">
+        <div class= "container">
+            <div class ="row">
+                <div class= "footer-col">
+                    <h4>Company</h4>
+
+                    <ul>
+                        <li><a href="aboutus.html">about us</a></li>
+                        <li><a href="#">Our services</a></li>
+                        <li><a href="#">Privacy policy</a></li>
+                        <li><a href="checkout.php">delivery</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Our Designers</h4>
+
+                    <ul>
+                        <li><a href="faq.php">Web Designers</a></li>
+                        <li><a href="contactus.php">Graphic Designers</a></li>
+                        <li><a href="return.php">UI/UX Designers</a></li>
+                        <li><a href="#">Database Managers</a></li>
+                        <li><a href="payment.html">Cyber Officers</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Buy Items Online</h4>
+
+                    <ul>
+                        <li><a href="products.html">Electronics</a></li>
+                        <li><a href="products.html">Wehicles</a></li>
+                        <li><a href="products.html">Houses</a></li>
+                        <li><a href="products.html">Clothes</a></li>
+                        <li><a href="products.html">Animals</a></li>
+                        <li><a href="newarrivals.html">Fashion and Beauty</a></li>
+                    </ul>
+                </div>
+				<div class="footer-col">
+                    <h4>Buy Services Online</h4>
+
+                    <ul>
+                        <li><a href="products.html">Graphic Designing</a></li>
+                        <li><a href="products.html">Thumbnail Designing</a></li>
+                        <li><a href="products.html">Data Entry</a></li>
+                        <li><a href="products.html">UI/UX Designing</a></li>
+                        <li><a href="products.html">Web App Developments</a></li>
+                        <li><a href="newarrivals.html">Video Editing</a></li>
+                    </ul>
+                </div>
+
+                    <div class="social-links">
+                        <a href="#"><img src="images/fb.png" id = "sm" width = "50px" height="50px"></a>
+                        <a href="#"><img src="images/twit.png" id = "sm"  width = "50px" height="50px"></a>
+                        <a href="#"><img src="images/insta.png" id = "sm"  width = "50px" height="50px"></a>
+                        <a href="#"><img src="images/link.png" id = "sm"  width = "50px" height="50px"></a>
+                    </div>
+
+                <div class="notice">
+								<br>
+                    Copyright Protected &copy;
+                    <b>2022 BUZELLIT.lk (Pvt.).Ltd</b>
+                </div>
+            </div>
+        </div>
+    </footer>
+	
+</body>
+</html>
